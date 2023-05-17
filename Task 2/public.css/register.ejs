@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Register</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <form action="/users/register" method="POST" enctype="multipart/form-data">
+                <h1>Register yourself!</h1>  
+                <label class="form-group">First Name</label>
+                <input type="text" class="form-control" name="firstname" placeholder="John"><br><br>
+                <label class="form-group">Last Name</label>
+                <input class="form-control" type="text" name="lastname" placeholder="Doe"><br><br>
+                <label class="form-group">User Name</label>
+                <input class="form-control" type="text" name="username" placeholder="johndoe"><br><br>
+                <label class="form-group">Avatar</label>
+                <input type="file" name="avatar"><br><br>
+                <button class="button" type="submit">Register</button>
+            </form>
+        </div>
+    </body>
+</html>
